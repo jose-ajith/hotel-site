@@ -1,0 +1,441 @@
+:root{
+  --light-brown:#8b5e3c;
+  --dark-brown:#5c4033;
+  --gold:#ffd700;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display',cursive,serif;
+  font-style: italic;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+}
+
+.pages{
+  padding-top: 100px;
+}
+ /*Home*/
+
+.home{
+  margin-left: 40px;
+  font-size: 20px;
+
+}
+
+.homebg{
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+}
+
+.navbar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  padding: 20px 40px;
+
+  position: fixed;
+  top:  0;
+  left: 0;
+
+  color: #f1f1f1;
+  background: rgba(0, 0, 0, 0.219);
+  backdrop-filter: blur(8px);
+
+  z-index: 1000;
+  font-size: 15px;
+  font-weight: 200;
+  font-family: 'Playfair Display', cursive,serif;
+  font-style: italic;
+  text-decoration: none;
+}
+
+/* LOGO */
+
+.logo{
+  color: white;
+  font-size: 24px;
+  font-weight: 350;
+  font-style: italic;
+  font-family: 'Playfair Display',cursive,serif;
+  letter-spacing: 2px;
+}
+
+/* NAV LINKS */
+
+.nav-links{
+  display: flex;
+  gap: 45px;   /* SPACE BETWEEN TABS */
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: white;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.nav-links a:hover{
+  color: whitesmoke;
+  transform: scale(1.1);
+}
+
+/*menu*/
+
+.menu-btn{
+  display: block;
+  margin: -35px auto;
+
+  padding: 15px 35px;
+
+  border: none;
+  border-radius: 40px;
+
+  background: linear-gradient(135deg,#d4af37,#f5d76e);
+
+  color: #111;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Playfair Display', cursive,serif;
+
+  cursor: pointer;
+
+  transition: 0.4s ease;
+
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.menu-btn:hover{
+  transform: translateY(-5px) scale(1.05);
+
+  background: linear-gradient(135deg,#f5d76e,#d4af37);
+
+  box-shadow: 0 0 25px rgba(255,215,0,0.6);
+}
+
+.menu-link{
+  text-decoration: none;
+  text-align: left;
+}
+
+.cards{
+ 
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:120px;
+}
+
+.card{
+  width:400px;
+  min-height:25vh;
+  background:rgba(0,0,0,0.7);
+  padding:25px;
+  border-radius:15px;
+  font-style: italic;
+  font-family: 'Playfair Display', cursive,serif;
+
+  background: linear-gradient(BLACK,rgba(0,0,0,0.7));
+
+  cursor: pointer;
+
+  transition: 0.4s ease;
+
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.card:hover{
+  transform: translateY(-5px) scale(1.05);
+
+  background: linear-gradient(135deg,whitesmoke,whitesmoke,rgba(0,0,0,0.7));
+
+  color: black;
+
+  box-shadow: 0 0 25px rgba(255,215,0,0.6);
+}
+
+.card h2{
+  color:var(--gold);
+  font-size:24px;
+  margin-bottom:10px;
+  font-style: italic;
+}
+
+.img-abt{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:15px;
+}
+
+.img-abt img{
+ 
+  cursor: pointer;
+
+  transition: 0.4s ease;
+
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+
+  border-radius: 25px;
+
+}
+
+.img-abt img:hover{
+
+
+  transform: translateY(-5px) scale(1.05);
+
+  background: linear-gradient(135deg,whitesmoke,whitesmoke,rgba(0,0,0,0.7));
+
+  color: black;
+
+  box-shadow: 0 0 25px rgb(128, 128, 128);
+
+  animation: forwards;
+}
+
+.abt-p{
+  text-align: center;
+
+}
+
+.contact{
+  margin-top: 40px;
+  text-align: center;
+}
+
+.menu img{
+  margin-top: 5px;
+  margin-left: 10px;
+  width:1200px;
+  border:#111;
+  border-radius: 25px;
+}
+
+.story p{
+  color:white;
+}
+
+.homes{
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+.homes h1{
+  color:yellow;
+}
+
+.logo-img {
+  width: 95px;
+  height: 95px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.logo1-img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+/*booking page*/
+.booking-container {
+  width: 100%;
+  max-width: 420px;
+
+  background: rgba(0, 0, 0, 0.65);
+
+  backdrop-filter: blur(8px);
+
+  padding: 40px;
+
+  border-radius: 25px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+
+  text-align: center;
+
+  margin-left: 40px;
+
+  padding-top: 60px;
+}
+
+.booking-container h1 {
+  color: yellow;
+  margin-bottom: 25px;
+  font-size: 42px;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+.booking-form button {
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: gold;
+
+  color: black;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.booking-form button:hover {
+  transform: scale(1.05);
+}
+
+/*gallery*/
+
+.gallery {
+  margin-right:500px;
+  margin-top: 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+  
+  cursor: pointer;
+
+  transition: 0.4s ease;
+
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+
+  border-radius: 15px;
+}
+
+.gallery img {
+  width: 300px;
+  border-radius: 15px;
+
+}
+
+.gallery:hover{
+   transform: translateY(-5px) scale(1.05);
+
+   background: linear-gradient(135deg,whitesmoke,whitesmoke,rgba(0, 0, 0, 0));
+
+   color: black;
+
+   box-shadow: 0 0 25px rgb(128, 128, 128);
+
+}
+
+.gallery1 {
+  margin-right:600px;
+  margin-top: 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+  
+  cursor: pointer;
+
+  transition: 0.4s ease;
+
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+
+  border-radius: 15px;
+
+}
+
+.gallery1 p{
+  margin-right: auto;
+
+  margin-left: 20px;
+}
+
+.gallery1 img {
+  width: 300px;
+  border-radius: 15px;
+  margin-left: auto;
+}
+
+.gallery1:hover{
+   transform: translateY(-5px) scale(1.05);
+
+   background: linear-gradient(135deg,whitesmoke,whitesmoke,rgba(0, 0, 0, 0));
+
+   color: black;
+
+   box-shadow: 0 0 25px rgb(128, 128, 128);
+
+}
+
+.gallery2{
+  margin-right:700px;
+  margin-top: 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+  
+  cursor: pointer;
+
+  transition: 0.4s ease;
+
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+
+  border-radius: 15px;
+}
+.gallery2 img{
+  width: 300px;
+  border-radius: 15px;
+}
+
+.gallery2:hover{
+   transform: translateY(-5px) scale(1.05);
+
+   background: linear-gradient(135deg,whitesmoke,whitesmoke,rgba(0, 0, 0, 0));
+
+   color: black;
+
+   box-shadow: 0 0 25px rgb(128, 128, 128);
+
+}
