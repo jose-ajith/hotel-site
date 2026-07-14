@@ -3,10 +3,12 @@ export default function About() {
   return (
     <div className="homebg"
       style={{
-        backgroundImage: "linear-gradient(rgba(8, 7, 7, 0.29)),url('/images/home.webp')",
-        backgroundSize: "cover",
-        minHeight:"100vh"
-      }}
+  backgroundImage: `linear-gradient(rgba(8, 7, 7, 0.29), rgba(8, 7, 7, 0.29)), url(${import.meta.env.BASE_URL}images/home.webp)`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  minHeight: "100vh",
+}}
     >
     
     <div className="pages">
@@ -19,11 +21,23 @@ export default function About() {
       <p>Today, Opus Cutlery is considered one of the city’s most respected modern restaurants. Even after more than 40 years, it is still known for combining innovation with hospitality. Longtime customers still come for the dishes they loved decades ago, while new visitors discover contemporary menus inspired by the restaurant’s history.</p>
       <p>Above the kitchen entrance, a small framed note from 1984 still hangs:<br /><br />“Serve people something worth remembering.”</p>l
       <div className="img-abt">
-        <img src="images/welcome.webp" alt="welcome" style={{width:"250px"}} />
-        <img src="images/abb.webp" alt="about" style={
-      {width:"250px"}
-        }/>
-        <img src="images/always.webp" alt="always" style={{width:"250px"}} />
+        <img
+  src={`${import.meta.env.BASE_URL}images/welcome.webp`}
+  alt="welcome"
+  style={{ width: "250px" }}
+/>
+
+<img
+  src={`${import.meta.env.BASE_URL}images/abb.webp`}
+  alt="about"
+  style={{ width: "250px" }}
+/>
+
+<img
+  src={`${import.meta.env.BASE_URL}images/always.webp`}
+  alt="always"
+  style={{ width: "250px" }}
+/>
       </div>
       <p className="abt-p"><br />We are there for you,If not for you we would never exist in the first place</p>
       </div>

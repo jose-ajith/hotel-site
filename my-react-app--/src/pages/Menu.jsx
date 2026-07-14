@@ -2,7 +2,7 @@ export default function Menu() {
   return (
     <div className="homebg"
       style={{
-        backgroundImage: "url('/images/home.webp')",
+        backgroundImage: `url(${import.meta.env.BASE_URL}images/home.webp)`,
         backgroundSize: "cover",
         minHeight:"100vh"
       }}>
@@ -11,7 +11,7 @@ export default function Menu() {
       <div className="homes">
       <h1><u>Our Menu Card</u></h1></div>
       <div className="menu">
-      <img src="/images/menu-items.webp" alt="menu card" />
+      <img src={`${import.meta.env.BASE_URL}images/menu-items.webp`} alt="menu card" />
       </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ export default function Home() {
     <>
     <div className="homebg"
       style={{
-        backgroundImage: "url('/images/home.webp')",
+        backgroundImage: `url(${import.meta.env.BASE_URL}images/home.webp)`,
         backgroundSize: "cover",
         minHeight:"100vh"
       }}
