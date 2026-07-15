@@ -2,7 +2,7 @@
   "name": "my-react-app--",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://shiro-og.github.io/test-1--hotel-site/",
+  "homepage": "https://jose-ajith.github.io/hotel-site/",
   "type": "module",
   "scripts": {
     "dev": "vite",

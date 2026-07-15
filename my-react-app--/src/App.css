@@ -219,11 +219,12 @@ body{
   text-align: center;
 }
 
-.menu img{
-  margin-top: 5px;
-  margin-left: 10px;
-  width:1200px;
-  border:#111;
+.menu img {
+  display: block;
+  margin: 5px auto 0 auto; /* Centers the image perfectly */
+  width: 100%;
+  max-width: 850px; /* Limits the size on large screens so it stays clean and readable */
+  height: auto;
   border-radius: 25px;
 }
 
